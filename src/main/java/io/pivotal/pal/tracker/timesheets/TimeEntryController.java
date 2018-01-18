@@ -1,4 +1,4 @@
-package io.pivotal.pal.tracker;
+package io.pivotal.pal.tracker.timesheets;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

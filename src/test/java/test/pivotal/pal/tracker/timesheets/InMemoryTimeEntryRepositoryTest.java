@@ -1,8 +1,8 @@
-package test.pivotal.pal.tracker;
+package test.pivotal.pal.tracker.timesheets;
 
-import io.pivotal.pal.tracker.TimeEntryRepository;
-import io.pivotal.pal.tracker.InMemoryTimeEntryRepository;
-import io.pivotal.pal.tracker.TimeEntry;
+import io.pivotal.pal.tracker.timesheets.TimeEntryRepository;
+import io.pivotal.pal.tracker.timesheets.InMemoryTimeEntryRepository;
+import io.pivotal.pal.tracker.timesheets.TimeEntry;
 import org.junit.Test;
 
 import java.time.LocalDate;

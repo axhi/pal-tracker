@@ -1,9 +1,11 @@
-package io.pivotal.pal.tracker;
+package io.pivotal.pal.tracker.timesheets;
+
+import io.pivotal.pal.tracker.timesheets.TimeEntry;
+import io.pivotal.pal.tracker.timesheets.TimeEntryRepository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.OptionalInt;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     private HashMap<Long, TimeEntry> timeEntries = new HashMap<Long, TimeEntry>();

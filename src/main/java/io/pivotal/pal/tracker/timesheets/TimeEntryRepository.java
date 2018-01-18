@@ -1,4 +1,4 @@
-package io.pivotal.pal.tracker;
+package io.pivotal.pal.tracker.timesheets;
 
 import org.springframework.stereotype.Repository;
 
