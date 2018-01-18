@@ -10,12 +10,10 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
     @Override
     public TimeEntry create(TimeEntry timeEntry) {
-        long id = 1;
-        OptionalInt max = timeEntries.keySet().stream().mapToInt(Math::toIntExact).max();
-
-        if (max.isPresent()) {
-            id = max.getAsInt() + 1;
-        }
+        long id = timeEntries.keySet()
+                .stream()
+                .mapToInt(Math::toIntExact)
+                .max().orElse(0) + 1;
 
         TimeEntry timeEntryEntity = new TimeEntry(id, timeEntry);
         timeEntries.put(id, timeEntryEntity);
